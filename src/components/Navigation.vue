@@ -48,6 +48,7 @@ export default {
   list-style: none;
   overflow-x: auto;
   border-bottom: 1px solid #ccc;
+  padding-top: 10px;
 }
 
 .navigation-item {

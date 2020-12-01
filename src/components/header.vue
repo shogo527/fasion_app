@@ -12,22 +12,24 @@ export default {};
 <style lang="scss" scoped>
 .header {
   display: flex;
+  margin: 0 auto;
   justify-content: space-around;
   align-items: center;
   max-width: 350px;
   height: 100px;
   border-bottom: none;
-  padding-top: px;
+  padding-top: 60px;
+  padding-bottom: 70px;
 }
 .hanger {
   flex: 1;
-  width: 30px;
+  width: 120px;
   padding-right: 15px;
   padding-left: 25px;
 }
 .mycloz {
   flex: 2;
-  max-height: 50px;
+  max-height: 120px;
   padding-right: 25px;
 }
 </style>

@@ -10,9 +10,9 @@
       <Signup></Signup>
     </div>
     <div>
-      <p class="message">初めての方はこちら</p>
+
       <button class="btn" v-on:click="signup_vesible = !signup_vesible">
-        アカウント新規作成の方はこちら
+        新規作成／ログイン
       </button>
     </div>
   </div>
@@ -67,10 +67,11 @@ export default {
 .btn {
   background-color: rgb(96, 211, 146);
   border-radius: 50px 50px 50px 50px;
-  width: 80%;
+  width: 400px;
   height: 50px;
   color: white;
   font-size: 18px;
+  margin-top: 90px;
 }
 .message {
   font-size: 6px;

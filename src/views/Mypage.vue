@@ -1,13 +1,13 @@
 <template>
   <div>
     <Header></Header>
-    <h1>Mypage</h1>
+    <h1 id ="mypage">Mypage</h1>
     <div>
-      <img src="src/assests/shoes.png" alt />
-      <h1>Name: {{ this. name }}</h1>
-      <p>Account: {{ this.account }}</p>
-      <p>Gender: {{ this.gender}}</p>
-      <P>Height: {{ this.height }} cm</P>
+      <img id = "pic" src="@/assets/prof.png" alt />
+      <h1>Shogo</h1>
+      <p>ユーザー名: {{ this.account }}</p>
+      <p>性別: {{ this.gender}}</p>
+      <P>身長: {{ this.height }} cm</P>
     </div>
     <Footer></Footer>
   </div>
@@ -20,9 +20,9 @@ export default {
   data() {
     return {
       user: {},
-      name: "Hiroto",
-      account: "@hiroto.fashion.app",
-      gender: "male",
+      name: "Shogo",
+      account: "@shogo__527",
+      gender: "男",
       height: 170,
     };
   },
@@ -32,3 +32,14 @@ export default {
   }
 };
 </script>
+
+ <style scoped>
+#mypage{
+
+  font-size: 50px;
+ }
+#pic {
+  width: 200px;
+}
+
+ </style>

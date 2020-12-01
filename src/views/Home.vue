@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Header></Header>
+  <Navigation></Navigation>
     <div v-if="!this.clothes">
       <p>洋服を追加してみよう。</p>
       <img class="shoes" src="@/assets/shoes.png" alt="シューズの画像" />
@@ -21,7 +22,9 @@
 
 import Header from "../components/header.vue";
 import Footer from "../components/footer.vue";
+import Navigation from "../components/Navigation.vue";
 import { db } from "@/main";
+
 export default {
   name: "Home",
   data() {
@@ -31,7 +34,8 @@ export default {
   },
   components: {
     Header,
-    Footer
+    Footer,
+    Navigation
   },
   mounted() {
     db.collection("items")
@@ -57,7 +61,7 @@ h3 {
   font-size: 12px;
 }
 .shoes {
-  width: 200px;
+  width: 300px;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -65,11 +69,12 @@ h3 {
 }
 
 p {
-  font-size: 30px;
-  font-family: SimSun;
+  font-size: 40px;
+  color: grey;;
+  font-family: serif;
   margin: 0 auto;
   position: relative;
-  top: 150px;
+  top: 110px;
 }
 
 .item-table {

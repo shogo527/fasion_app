@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>すでにアカウントをお持ちの方</div>
+    <div class="moji">すでにアカウントをお持ちの方</div>
     <p>
       メールアドレス
       <input v-model="email" class="form-control email-form" type="email" />
@@ -75,25 +75,30 @@ export default {
 };
 </script>
 <style scoped>
+.moji{
+  font-size: 40px;
+  padding-bottom: 20px;
+  color: gray;
+}
 .email-form {
   border-radius: 50px 50px 50px 50px;
-  width: 80%;
+  width: 800px;
   height: 50px;
   background-color: rgb(235, 235, 235);
 }
 .password-form {
   border-radius: 50px 50px 50px 50px;
-  width: 80%;
+  width: 800px;
   height: 50px;
   background-color: rgb(235, 235, 235);
 }
 .button {
   border-radius: 50px 50px 50px 50px;
-  width: 80%;
-  height: 50px;
+  width: 210px;
+  height: 70px;
   background-color: rgb(105, 169, 186);
   color: white;
-  font-size: 18px;
-  margin-top: 100px;
+  font-size: 26px;
+  margin-top: 40px;
 }
 </style>

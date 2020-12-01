@@ -2,12 +2,10 @@
   <div id="app">
     <div class="header">
       <div v-if="user">
-        <button v-on:click="logOut">log Out</button>
+        <button v-on:click="logOut" class="loginButton">ログアウト</button>
       </div>
       <div v-else>
-        <router-link to="/mail" tag="button" class="loginButton"
-          >ログイン/登録</router-link
-        >
+        <router-link to="/mail" tag="button" class="loginButton">ログイン/登録</router-link>
       </div>
 
       <router-view></router-view>
