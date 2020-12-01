@@ -73,10 +73,5 @@ export default {
   font-size: 18px;
   margin-top: 90px;
 }
-.message {
-  font-size: 6px;
-  margin-top: 150px;
-  text-align: left;
-  padding-left: 30px;
-}
+
 </style>
